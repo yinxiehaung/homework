@@ -25,13 +25,15 @@ int main(){
                 x += dx;
                 y += dy;
 
-                if( x > 0 && x < 8 && y > 0 && y < 8 && chess[y][x] == 0 ){
-                    break;
-                }
-                if( chess[y][x] != color){
-                    con = 1;
-                }else{
-                    con = 0;
+                if( x > 0 && x < 8 && y > 0 && y < 8 ){
+                    if( chess[y][x] == 0 ){
+                        break;
+                    }
+                    if( chess[y][x] != color){
+                        con = 1;
+                    }else{
+                        con = 0;
+                    }
                 }
             }
 
