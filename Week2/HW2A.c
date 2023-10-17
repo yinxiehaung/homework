@@ -20,7 +20,6 @@ int main(){
     for( int i = 0; i < 8; i++){
         for( int j = 0; j < 8; j++){
             if( chess[i][j] == color ){
-                
                 for( int dy = -1; dy <= 1; dy++ ){
                     for( int dx = -1; dx <=1; dx++ ){
                         int con = 0;
