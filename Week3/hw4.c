@@ -41,7 +41,7 @@ void check( int x, int y ){
         int step = oneDirection( x, y, _direction[i][0], _direction[i][1] );//對每個方向進行判斷
             
         if(step){
-            printf("(%d, %d) ", x + (dx * step), y + (dy * step)); //輸出可以下的座標
+            printf("(%d, %d) ", x + (_direction[i][1] * step), y + (_direction[i][0] * step)); //輸出可以下的座標
         }
    }
     reset();//清除標記
