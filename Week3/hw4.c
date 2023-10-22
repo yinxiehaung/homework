@@ -23,7 +23,7 @@ int oneDirection(int x, int y, int dy, int dx ){
             
             if( _chess[y][x] == 0 && con ){
                 _chess[y][x] = 120;
-                return i; //i為有幾個可翻轉的棋子
+                return i + 1; //i為有幾個可翻轉的棋子
             } 
             /*if( _chess[y][x] == 3 - _color ){ //若為不同顏色就可夾擊
                 con = 1;
