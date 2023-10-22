@@ -25,8 +25,7 @@ int oneDirection(int x, int y, int dy, int dx ){
                 _chess[y][x] = 120;
                 return i + 1;
             } 
-            if( _chess[y][x] != _color && _chess[y][x] != 120 &&
-            _chess[y][x] != 0){
+            if( _chess[y][x] == 3 - _color ){
                 con = 1;
             }else{
                 con = 0;
