@@ -42,7 +42,7 @@ int main(){
             }
             printf("%d ", chess[i][j]);
         }
-        puts("");
+        printf("\n");
     }
     return 0;
 }
