@@ -18,9 +18,9 @@ int main(){
 
     int color = chess[address_y][address_x];
 
-    int con = 0;
     for( int i = 0; i < 8; i++){
         int x = address_x, y = address_y;
+        int con = 0;
         for( int k = 0; k < 8; k++ ){
             x += _direction[i][0];
             y += _direction[i][1];
