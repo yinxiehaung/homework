@@ -20,18 +20,19 @@ int main(){
 
     int con = 0;
     int x = address_x, y = address_y;
-    for( int k = 0; k < 8; k++ ){
-        x += dx;
-        y += dy;
-                            
-        if( (x >= 0 && x < 8) && (y >= 0 && y < 8) ){
-            if( chess[y][x] == 0 && con ){
-                chess[y][x] = 120;
-                con = 0;
-                continue;
-            }
-            con = ( chess[y][x] == 3 - color ) ? 1:0;    
-        } 
+    for( int i = 0; i < 8; i++){
+        for( int k = 0; k < 8; k++ ){
+            x += _direction[i][0];
+            y += _direction[i][1];
+                                
+            if( (x >= 0 && x < 8) && (y >= 0 && y < 8) ){
+                if( chess[y][x] == 0 && con ){
+                    chess[y][x] = 120;
+                    break;
+                }
+                con = ( chess[y][x] == 3 - color ) ? 1:0;    
+            } 
+        }
     }
 
     for( int i = 0; i < 8; i++ ){
