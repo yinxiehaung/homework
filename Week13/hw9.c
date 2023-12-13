@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "Stack.c"
+#include "Stack.h"
 
 #define autofree __attribute__\
 ((cleanup(free_stack)))
@@ -41,6 +41,12 @@ int main(){
             stack -> push(stack, --y);
             stack -> push(stack, x);
         }else if( x  == 4 && y == 4 ){
+            for(int i = 0; i < 5; i++ ){
+                for( int j = 0; j < 5; j++ ){
+                    printf("%d ", maze[i][j]);
+                }
+                printf("\n");
+            }
             printf("Yes\n");
             break;
         }else if( !(stack -> isEmpty(stack)) ){
