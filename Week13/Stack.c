@@ -1,8 +1,8 @@
 //refer by https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/
-#include "Stack.h"
 #include <stdio.h>
 #include <limits.h>
 #include <stdlib.h>
+#include "Stack.h"
 
 static int pop_implc( Stack *self ){
     if( self -> isEmpty(self) ){
