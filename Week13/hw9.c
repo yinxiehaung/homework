@@ -26,7 +26,9 @@ int main(){
     }
     autofree Stack *stack;
     init_stack(&stack, size * size * 2);
-    int x = 0, y = 0;
+    int x, y;
+    printf("Enter Start point:");
+    scnaf("%d %d", &x, &y);
     while( x < size && y < size ){
         maze[y][x] = 2;
         if( INMAZE(x + 1,y,size, size) && RIGHT(x,y)){
